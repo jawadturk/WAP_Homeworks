@@ -1,0 +1,28 @@
+DB Design 
+
+
+Book{_id:, ISBN: ,
+author: ,
+tags: ["Computer Science","JavaScript"]
+,
+ borrowings:[
+{
+student:{_id: , name: , phone: , email:},
+BorrowDate: ,
+
+DueDate:
+},
+{
+student:{_id: , name: , phone: , email:},
+BorrowDate: ,
+
+DueDate:
+}
+]
+}
+
+	
+
+
+I designed the database this way because I felt list of borrowings with the borrower can be included directly in each book.
+Using indexing would be putting indices over the array of borrowings. each object in the array will have a certain index.
